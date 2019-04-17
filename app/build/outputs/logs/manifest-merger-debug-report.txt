@@ -1,0 +1,556 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:2:1-41:12
+MERGED from [com.android.support:design:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/de98ed664712f814e193457f37b999bf/AndroidManifest.xml:17:1-24:12
+MERGED from [com.firebaseui:firebase-ui-database:1.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-1.2.0.aar/c5aaac26b84c85c6afb7ae663f7c2a80/AndroidManifest.xml:2:1-19:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/dd4e9a196840337fcf47eefd7fd9e33b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/da4e25d3638b824bbcbe85893801d258/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/df1ad4f9a07e754e77cb6bd2e34e1b07/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-database:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.3.aar/791f8e18b77770b90ae0d9132021fcd6/AndroidManifest.xml:15:1-25:12
+MERGED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.firebase:firebase-core:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/b5c00cbbaef80a4158f603558597b9ef/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/75b46ff5d381cccfb9f612000d8e0cc0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/6bb5172a6d552654996e00213a1b2b7c/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.2.aar/4b0f6b860e1b6d4a6b50afb06cc09fda/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/a5f81e1d72b71f4a6a24c8178e7d888c/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d92f21e3f6e870823e2140f97af8c1d0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/7c76faa7767220d7b5b77811de90b9ca/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e671d732a9a3c14553d0026f5402b42e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-database-collection:16.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.0.aar/b0fd747c92bd179385c240c9b05dd3f3/AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/128afc08be3605dc0ebfb17da64e3cce/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/5cffa7c437b3a599ee55e3958f9c465c/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/908f2ad65d8d5f8a92e84fe4106a4e2a/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/a1711fba14108f0eccb891bad915d3a0/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/65c682671e9dffab4a84f88a05de6b5f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/78a84ce0e473ff7990f88b15709ee8b9/AndroidManifest.xml:2:1-7:12
+MERGED from [com.github.ybq:Android-SpinKit:1.1.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/Android-SpinKit-1.1.0.aar/bee6d349514ea811bfbffb04c979abe2/AndroidManifest.xml:2:1-10:12
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/49469f15e89e1d3be4a277c059f05fb9/AndroidManifest.xml:2:1-11:12
+MERGED from [com.getbase:floatingactionbutton:1.10.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/floatingactionbutton-1.10.1.aar/8c29004fe8290ec94510603d94f477b9/AndroidManifest.xml:2:1-14:12
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/914be381329b9600d343854974899a5a/AndroidManifest.xml:2:1-12:12
+MERGED from [com.github.zcweng:switch-button:0.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/switch-button-0.0.3.aar/93e32e69d3db524cb5d8b98e17c72dc5/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/17a4db296d4714cdf9f9f1a64cd92480/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/a86b8208e331dc0cb34ab46bd73fe997/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/5c35a9d9fcb7e5806c9be11b2d8c29b0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8f961314304b823a027ade34cf195184/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8668986621685f683d4b5ed5221ba327/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/75a567871cf8ca048978c343c0448d25/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/c2b90eebee5009321ad6b50346249c16/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/12712c2f6177d1ab7598332dc655a1de/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9ebf453bf53773ffefb389eb6ef970dc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0abaec05a9d0980f25c67bef941e245a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/22908b9be55cf5603b448679e5b5bbfb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/80366fe394167be83f8d95a755183418/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/adb28596df8444995857196bd1059021/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/7a8c5a7b02782927f7e86d2683a03ca3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/35ebafd7bd28ae32f6cace4e80534417/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/910ba037fae43fffe81f3bad27e4c7a8/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4a3a3c503bcf895bf58d7a65c5b0313e/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/9836c56fabc54b24b20231045dea2e77/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/aeac6af38d65f8a254b4a6324a7e87b2/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/cd66881f0a9d2649b18799726b6a741f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/f27b28907033416a704671516da6e40f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d397288ddaf404b25d12a5ff7297ad6c/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/afdb6da1f490fe5d85ea46ea396c9b20/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/36dba3016b2f46a6924c24e8ac40e005/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/bd7c0174c88d05c3b7e354ea6702b97e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/9a90f5a02e5a9a35a21855e6874cf240/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/7b70816ecc056207fa1b8766e35d3460/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/ee3f7f96d43247ebf77d3b18f3b86bd8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ba61a08eb9c6eeed75cd542143985997/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/3e54a401216e10265845c8a03f2db1d8/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:2:1-41:12
+INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:2:1-41:12
+	package
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:4:5-40
+		INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:2:1-41:12
+		INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:2:1-41:12
+		INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:6:5-79
+MERGED from [com.google.firebase:firebase-database:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.3.aar/791f8e18b77770b90ae0d9132021fcd6/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-database:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.3.aar/791f8e18b77770b90ae0d9132021fcd6/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.INTERNET
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:7:5-67
+MERGED from [com.firebaseui:firebase-ui-database:1.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-1.2.0.aar/c5aaac26b84c85c6afb7ae663f7c2a80/AndroidManifest.xml:11:5-67
+MERGED from [com.firebaseui:firebase-ui-database:1.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-1.2.0.aar/c5aaac26b84c85c6afb7ae663f7c2a80/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-database:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.3.aar/791f8e18b77770b90ae0d9132021fcd6/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-database:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.3.aar/791f8e18b77770b90ae0d9132021fcd6/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:7:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:8:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:9:22-77
+application
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:11:5-39:19
+MERGED from [com.android.support:design:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/de98ed664712f814e193457f37b999bf/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/de98ed664712f814e193457f37b999bf/AndroidManifest.xml:22:5-20
+MERGED from [com.firebaseui:firebase-ui-database:1.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-1.2.0.aar/c5aaac26b84c85c6afb7ae663f7c2a80/AndroidManifest.xml:13:5-17:19
+MERGED from [com.firebaseui:firebase-ui-database:1.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-1.2.0.aar/c5aaac26b84c85c6afb7ae663f7c2a80/AndroidManifest.xml:13:5-17:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/da4e25d3638b824bbcbe85893801d258/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/da4e25d3638b824bbcbe85893801d258/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-core:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/b5c00cbbaef80a4158f603558597b9ef/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/b5c00cbbaef80a4158f603558597b9ef/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/6bb5172a6d552654996e00213a1b2b7c/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/6bb5172a6d552654996e00213a1b2b7c/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.2.aar/4b0f6b860e1b6d4a6b50afb06cc09fda/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.2.aar/4b0f6b860e1b6d4a6b50afb06cc09fda/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/a5f81e1d72b71f4a6a24c8178e7d888c/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/a5f81e1d72b71f4a6a24c8178e7d888c/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d92f21e3f6e870823e2140f97af8c1d0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d92f21e3f6e870823e2140f97af8c1d0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/7c76faa7767220d7b5b77811de90b9ca/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/7c76faa7767220d7b5b77811de90b9ca/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e671d732a9a3c14553d0026f5402b42e/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e671d732a9a3c14553d0026f5402b42e/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/128afc08be3605dc0ebfb17da64e3cce/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/128afc08be3605dc0ebfb17da64e3cce/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/5cffa7c437b3a599ee55e3958f9c465c/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/5cffa7c437b3a599ee55e3958f9c465c/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/908f2ad65d8d5f8a92e84fe4106a4e2a/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/908f2ad65d8d5f8a92e84fe4106a4e2a/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/a1711fba14108f0eccb891bad915d3a0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/a1711fba14108f0eccb891bad915d3a0/AndroidManifest.xml:22:5-26:19
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/49469f15e89e1d3be4a277c059f05fb9/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/49469f15e89e1d3be4a277c059f05fb9/AndroidManifest.xml:9:5-20
+MERGED from [com.getbase:floatingactionbutton:1.10.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/floatingactionbutton-1.10.1.aar/8c29004fe8290ec94510603d94f477b9/AndroidManifest.xml:12:5-20
+MERGED from [com.getbase:floatingactionbutton:1.10.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/floatingactionbutton-1.10.1.aar/8c29004fe8290ec94510603d94f477b9/AndroidManifest.xml:12:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/914be381329b9600d343854974899a5a/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/914be381329b9600d343854974899a5a/AndroidManifest.xml:10:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/910ba037fae43fffe81f3bad27e4c7a8/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/910ba037fae43fffe81f3bad27e4c7a8/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4a3a3c503bcf895bf58d7a65c5b0313e/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4a3a3c503bcf895bf58d7a65c5b0313e/AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/36dba3016b2f46a6924c24e8ac40e005/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/36dba3016b2f46a6924c24e8ac40e005/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/3e54a401216e10265845c8a03f2db1d8/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/3e54a401216e10265845c8a03f2db1d8/AndroidManifest.xml:7:5-20
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/910ba037fae43fffe81f3bad27e4c7a8/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:17:9-35
+	android:label
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:15:9-41
+	tools:ignore
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:19:9-48
+	android:roundIcon
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:16:9-54
+	android:icon
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:18:9-40
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:12:9-35
+activity#com.example.doanorderfood.activity.MonAnDaCheBienActivity
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:20:9-78
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:20:19-66
+activity#com.example.doanorderfood.activity.DetailCookerActivity
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:21:9-67
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:21:19-64
+activity#com.example.doanorderfood.activity.MenuActivity
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:22:9-59
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:22:19-56
+activity#com.example.doanorderfood.activity.BillActivity
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:23:9-59
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:23:19-56
+activity#com.example.doanorderfood.activity.HistoryBillActivity
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:24:9-66
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:24:19-63
+activity#com.example.doanorderfood.activity.ProfileActivity
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:25:9-62
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:25:19-59
+activity#com.example.doanorderfood.activity.AddStaffActivity
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:26:9-63
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:26:19-60
+activity#com.example.doanorderfood.activity.CookerActivity
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:27:9-61
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:27:19-58
+activity#com.example.doanorderfood.activity.WaiterActivity
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:28:9-61
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:28:19-58
+activity#com.example.doanorderfood.activity.ManagerMainActivity
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:29:9-66
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:29:19-63
+activity#com.example.doanorderfood.activity.LoginActivity
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:30:9-60
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:30:19-57
+activity#com.example.doanorderfood.MainActivity
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:31:9-50
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:31:19-47
+activity#com.example.doanorderfood.activity.SplashActivity
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:32:9-38:20
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:32:19-58
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:33:13-37:29
+action#android.intent.action.MAIN
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:34:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:36:17-77
+	android:name
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml:36:27-74
+uses-sdk
+INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/de98ed664712f814e193457f37b999bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/de98ed664712f814e193457f37b999bf/AndroidManifest.xml:20:5-44
+MERGED from [com.firebaseui:firebase-ui-database:1.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-1.2.0.aar/c5aaac26b84c85c6afb7ae663f7c2a80/AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-database:1.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-1.2.0.aar/c5aaac26b84c85c6afb7ae663f7c2a80/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/dd4e9a196840337fcf47eefd7fd9e33b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/dd4e9a196840337fcf47eefd7fd9e33b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/da4e25d3638b824bbcbe85893801d258/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/da4e25d3638b824bbcbe85893801d258/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/df1ad4f9a07e754e77cb6bd2e34e1b07/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/df1ad4f9a07e754e77cb6bd2e34e1b07/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-database:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.3.aar/791f8e18b77770b90ae0d9132021fcd6/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.3.aar/791f8e18b77770b90ae0d9132021fcd6/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/b5c00cbbaef80a4158f603558597b9ef/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.4.aar/b5c00cbbaef80a4158f603558597b9ef/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/75b46ff5d381cccfb9f612000d8e0cc0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-flags-16.0.1.aar/75b46ff5d381cccfb9f612000d8e0cc0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/6bb5172a6d552654996e00213a1b2b7c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/6bb5172a6d552654996e00213a1b2b7c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.2.aar/4b0f6b860e1b6d4a6b50afb06cc09fda/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.2.aar/4b0f6b860e1b6d4a6b50afb06cc09fda/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/a5f81e1d72b71f4a6a24c8178e7d888c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/a5f81e1d72b71f4a6a24c8178e7d888c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d92f21e3f6e870823e2140f97af8c1d0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d92f21e3f6e870823e2140f97af8c1d0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/7c76faa7767220d7b5b77811de90b9ca/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/7c76faa7767220d7b5b77811de90b9ca/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e671d732a9a3c14553d0026f5402b42e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/e671d732a9a3c14553d0026f5402b42e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.0.aar/b0fd747c92bd179385c240c9b05dd3f3/AndroidManifest.xml:6:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.0.aar/b0fd747c92bd179385c240c9b05dd3f3/AndroidManifest.xml:6:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/128afc08be3605dc0ebfb17da64e3cce/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/128afc08be3605dc0ebfb17da64e3cce/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/5cffa7c437b3a599ee55e3958f9c465c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/5cffa7c437b3a599ee55e3958f9c465c/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/908f2ad65d8d5f8a92e84fe4106a4e2a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/908f2ad65d8d5f8a92e84fe4106a4e2a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/a1711fba14108f0eccb891bad915d3a0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/a1711fba14108f0eccb891bad915d3a0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/65c682671e9dffab4a84f88a05de6b5f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/65c682671e9dffab4a84f88a05de6b5f/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/78a84ce0e473ff7990f88b15709ee8b9/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/butterknife-8.8.1.aar/78a84ce0e473ff7990f88b15709ee8b9/AndroidManifest.xml:5:5-43
+MERGED from [com.github.ybq:Android-SpinKit:1.1.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/Android-SpinKit-1.1.0.aar/bee6d349514ea811bfbffb04c979abe2/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.ybq:Android-SpinKit:1.1.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/Android-SpinKit-1.1.0.aar/bee6d349514ea811bfbffb04c979abe2/AndroidManifest.xml:6:5-8:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/49469f15e89e1d3be4a277c059f05fb9/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/circleimageview-3.0.0.aar/49469f15e89e1d3be4a277c059f05fb9/AndroidManifest.xml:5:5-7:41
+MERGED from [com.getbase:floatingactionbutton:1.10.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/floatingactionbutton-1.10.1.aar/8c29004fe8290ec94510603d94f477b9/AndroidManifest.xml:8:5-10:41
+MERGED from [com.getbase:floatingactionbutton:1.10.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/floatingactionbutton-1.10.1.aar/8c29004fe8290ec94510603d94f477b9/AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/914be381329b9600d343854974899a5a/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.8.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/glide-4.8.0.aar/914be381329b9600d343854974899a5a/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.zcweng:switch-button:0.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/switch-button-0.0.3.aar/93e32e69d3db524cb5d8b98e17c72dc5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.zcweng:switch-button:0.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/switch-button-0.0.3.aar/93e32e69d3db524cb5d8b98e17c72dc5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/17a4db296d4714cdf9f9f1a64cd92480/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/17a4db296d4714cdf9f9f1a64cd92480/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/a86b8208e331dc0cb34ab46bd73fe997/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/a86b8208e331dc0cb34ab46bd73fe997/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/5c35a9d9fcb7e5806c9be11b2d8c29b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/5c35a9d9fcb7e5806c9be11b2d8c29b0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8f961314304b823a027ade34cf195184/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/8f961314304b823a027ade34cf195184/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8668986621685f683d4b5ed5221ba327/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/8668986621685f683d4b5ed5221ba327/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/75a567871cf8ca048978c343c0448d25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/75a567871cf8ca048978c343c0448d25/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/c2b90eebee5009321ad6b50346249c16/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/c2b90eebee5009321ad6b50346249c16/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/12712c2f6177d1ab7598332dc655a1de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/12712c2f6177d1ab7598332dc655a1de/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9ebf453bf53773ffefb389eb6ef970dc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9ebf453bf53773ffefb389eb6ef970dc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0abaec05a9d0980f25c67bef941e245a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/0abaec05a9d0980f25c67bef941e245a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/22908b9be55cf5603b448679e5b5bbfb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/22908b9be55cf5603b448679e5b5bbfb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/80366fe394167be83f8d95a755183418/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/80366fe394167be83f8d95a755183418/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/adb28596df8444995857196bd1059021/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/adb28596df8444995857196bd1059021/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/7a8c5a7b02782927f7e86d2683a03ca3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/7a8c5a7b02782927f7e86d2683a03ca3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/35ebafd7bd28ae32f6cace4e80534417/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/35ebafd7bd28ae32f6cace4e80534417/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/910ba037fae43fffe81f3bad27e4c7a8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/910ba037fae43fffe81f3bad27e4c7a8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4a3a3c503bcf895bf58d7a65c5b0313e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/4a3a3c503bcf895bf58d7a65c5b0313e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/9836c56fabc54b24b20231045dea2e77/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/9836c56fabc54b24b20231045dea2e77/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/aeac6af38d65f8a254b4a6324a7e87b2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/aeac6af38d65f8a254b4a6324a7e87b2/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/cd66881f0a9d2649b18799726b6a741f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/cd66881f0a9d2649b18799726b6a741f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/f27b28907033416a704671516da6e40f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/f27b28907033416a704671516da6e40f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d397288ddaf404b25d12a5ff7297ad6c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/d397288ddaf404b25d12a5ff7297ad6c/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/afdb6da1f490fe5d85ea46ea396c9b20/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/afdb6da1f490fe5d85ea46ea396c9b20/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/36dba3016b2f46a6924c24e8ac40e005/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.8.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.8.0.aar/36dba3016b2f46a6924c24e8ac40e005/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:documentfile:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/bd7c0174c88d05c3b7e354ea6702b97e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/bd7c0174c88d05c3b7e354ea6702b97e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/9a90f5a02e5a9a35a21855e6874cf240/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/9a90f5a02e5a9a35a21855e6874cf240/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/7b70816ecc056207fa1b8766e35d3460/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/7b70816ecc056207fa1b8766e35d3460/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/ee3f7f96d43247ebf77d3b18f3b86bd8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/ee3f7f96d43247ebf77d3b18f3b86bd8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ba61a08eb9c6eeed75cd542143985997/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ba61a08eb9c6eeed75cd542143985997/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/3e54a401216e10265845c8a03f2db1d8/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.3.aar/3e54a401216e10265845c8a03f2db1d8/AndroidManifest.xml:5:5-44
+INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+		ADDED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/src/main/AndroidManifest.xml
+meta-data#com.google.android.gms.version
+ADDED from [com.firebaseui:firebase-ui-database:1.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-1.2.0.aar/c5aaac26b84c85c6afb7ae663f7c2a80/AndroidManifest.xml:14:9-16:69
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/a1711fba14108f0eccb891bad915d3a0/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:16.1.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/a1711fba14108f0eccb891bad915d3a0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.firebaseui:firebase-ui-database:1.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-1.2.0.aar/c5aaac26b84c85c6afb7ae663f7c2a80/AndroidManifest.xml:16:13-66
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-database:1.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-ui-database-1.2.0.aar/c5aaac26b84c85c6afb7ae663f7c2a80/AndroidManifest.xml:15:13-58
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:24:9-31:50
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:26:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:28:13-44
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:27:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:29:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:30:13-72
+	tools:replace
+		ADDED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:31:13-47
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:25:13-85
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:33:9-39:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:34:13-84
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.2.0] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.2.0.aar/958e39920e55f744154ac243d46659cb/AndroidManifest.xml:37:17-109
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:24:22-65
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.2.aar/9eada5740e8a2268149cda649947bcd8/AndroidManifest.xml:29:17-139
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.2] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.2.aar/ac9948e452ef128c30ec7abd3379221b/AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.4] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.4.aar/e60f88a9d555b852fcae87479f7102e3/AndroidManifest.xml:49:13-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:42:25-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:51:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:53:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:54:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/de99eb98b837d73389be96a76e8d81ce/AndroidManifest.xml:54:25-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d92f21e3f6e870823e2140f97af8c1d0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d92f21e3f6e870823e2140f97af8c1d0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d92f21e3f6e870823e2140f97af8c1d0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/d92f21e3f6e870823e2140f97af8c1d0/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/7c76faa7767220d7b5b77811de90b9ca/AndroidManifest.xml:10:9-14:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/7c76faa7767220d7b5b77811de90b9ca/AndroidManifest.xml:12:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/7c76faa7767220d7b5b77811de90b9ca/AndroidManifest.xml:13:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/7c76faa7767220d7b5b77811de90b9ca/AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.3] /Users/dongluong/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.3.aar/7c76faa7767220d7b5b77811de90b9ca/AndroidManifest.xml:11:13-77

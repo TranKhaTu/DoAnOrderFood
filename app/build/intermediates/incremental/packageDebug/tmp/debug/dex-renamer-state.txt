@@ -1,0 +1,4 @@
+#Mon Apr 15 11:48:14 ICT 2019
+base.0=/Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/build/intermediates/dex/debug/mergeDexDebug/out
+path.0=classes.dex
+renamed.0=classes.dex

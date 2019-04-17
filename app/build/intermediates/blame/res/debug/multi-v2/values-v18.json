@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "/Users/dongluong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/dd4e9a196840337fcf47eefd7fd9e33b/res/values-v18/values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}
