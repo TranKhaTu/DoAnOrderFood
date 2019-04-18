@@ -1,0 +1,125 @@
+{
+  "project_info": {
+    "project_number": "69465275433",
+    "firebase_url": "https://luongdong-2.firebaseio.com",
+    "project_id": "luongdong-2",
+    "storage_bucket": "luongdong-2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69465275433:android:55268e2579651e4d",
+        "android_client_info": {
+          "package_name": "com.dong.luong.ailatrieuphu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69465275433-7cb06u0qk5qqqkt4e1l4mh1nqfvo63hm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dong.luong.ailatrieuphu",
+            "certificate_hash": "72a202b3b4dfe35c7c45bfff3c87287de8f68de3"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv_E0vTx_QbeLCKXvW4rkthvPNA3mPqe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69465275433-jjnocgmv7u9g5btkg7r88tpudaqh1p48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69465275433:android:3300b1e2951ab236",
+        "android_client_info": {
+          "package_name": "com.example.doanorderfood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv_E0vTx_QbeLCKXvW4rkthvPNA3mPqe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69465275433-jjnocgmv7u9g5btkg7r88tpudaqh1p48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69465275433:android:e276810a5438f07e",
+        "android_client_info": {
+          "package_name": "donglv.com.demofirrebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69465275433-fkpvv5725g22av67d3cukb24oe4gjua6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "donglv.com.demofirrebase",
+            "certificate_hash": "72a202b3b4dfe35c7c45bfff3c87287de8f68de3"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv_E0vTx_QbeLCKXvW4rkthvPNA3mPqe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69465275433-jjnocgmv7u9g5btkg7r88tpudaqh1p48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69465275433:android:f99b76ba73462cdc",
+        "android_client_info": {
+          "package_name": "example.com.timnhatro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv_E0vTx_QbeLCKXvW4rkthvPNA3mPqe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69465275433-jjnocgmv7u9g5btkg7r88tpudaqh1p48.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
