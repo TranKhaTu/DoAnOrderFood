@@ -28,6 +28,8 @@ public class ListviewStaffAdapter extends BaseAdapter {
 
     private class ViewHolder {
         TextView tvName;
+        TextView tvID;
+        TextView tvAge;
         ImageView imCheckOnline;
 
     }
@@ -56,6 +58,8 @@ public class ListviewStaffAdapter extends BaseAdapter {
             ListviewStaffAdapter.ViewHolder viewHolder = new ListviewStaffAdapter.ViewHolder();
 
             viewHolder.tvName = viewRow.findViewById(R.id.tvNameStaff);
+            viewHolder.tvID = viewRow.findViewById(R.id.tvID);
+            viewHolder.tvAge = viewRow.findViewById(R.id.tvAge);
             viewHolder.imCheckOnline = viewRow.findViewById(R.id.checkOnline);
 
             viewRow.setTag(viewHolder);
@@ -63,7 +67,9 @@ public class ListviewStaffAdapter extends BaseAdapter {
 
         final Staff staff = arrItem.get(i);
         final ListviewStaffAdapter.ViewHolder viewHolder = (ListviewStaffAdapter.ViewHolder) viewRow.getTag();
-        viewHolder.tvName.setText(staff.getName());
+        viewHolder.tvName.setText("Tên :" + staff.getName());
+        viewHolder.tvID.setText("Id :" + staff.getId());
+        viewHolder.tvAge.setText("Ngày sinh  :" + staff.getDateOfBirth());
         if (staff.getCheckOnline() == 1) {
             viewHolder.imCheckOnline.setVisibility(View.VISIBLE);
         } else {

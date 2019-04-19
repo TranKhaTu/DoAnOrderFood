@@ -17,7 +17,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.AddStaffActivity"></activity>
+        <activity android:name=".activity.ProfileActivity"></activity>
+        <activity android:name=".activity.AddStaffActivity" />
         <activity android:name=".activity.CookerActivity" />
         <activity android:name=".activity.WaiterActivity" />
         <activity android:name=".activity.ManagerMainActivity" />

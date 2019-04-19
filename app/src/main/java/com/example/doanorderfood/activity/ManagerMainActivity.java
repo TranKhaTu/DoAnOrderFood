@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -19,6 +20,11 @@ import android.widget.Toast;
 import com.example.doanorderfood.R;
 import com.example.doanorderfood.adapter.ListviewStaffAdapter;
 import com.example.doanorderfood.model.Staff;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -60,7 +66,8 @@ public class ManagerMainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle toggle;
     private ArrayList<Staff> arrStaff;
     private ListviewStaffAdapter adap;
-
+    private DatabaseReference databaseReference;
+    private DatabaseReference mDatabase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,6 +77,8 @@ public class ManagerMainActivity extends AppCompatActivity {
     }
 
     private void initViews() {
+        mDatabase = FirebaseDatabase.getInstance().getReference("UserWaiter");
+        databaseReference = mDatabase.child("User");
         setSupportActionBar(toolbarManager);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -87,6 +96,34 @@ public class ManagerMainActivity extends AppCompatActivity {
 
         line3Manager.setVisibility(View.VISIBLE);
         btnShowAllStaff.setTextColor(Color.parseColor("#ef4b4c"));
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot noteSnapshot : dataSnapshot.getChildren()) {
+                    Staff staff = noteSnapshot.getValue(Staff.class);
+                    arrStaff.add(staff);
+                    adap.notifyDataSetChanged();
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+        adap = new ListviewStaffAdapter(this, R.layout.item_listview_staff, arrStaff);
+        lvStaff.setAdapter(adap);
+        adap.notifyDataSetChanged();
+        setLine(line3Manager, btnShowAllStaff);
+        lvStaff.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(ManagerMainActivity.this,ProfileActivity.class);
+                intent.putExtra("staff",arrStaff.get(position));
+                startActivity(intent);
+            }
+        });
+
     }
 
     @OnClick({R.id.addStaff, R.id.btnShowListStaffOnline, R.id.btnShowListStaffOffline, R.id.btnShowAllStaff, R.id.btnStaffManager, R.id.btnLogOutManager})

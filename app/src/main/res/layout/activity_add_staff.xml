@@ -127,6 +127,7 @@
                 android:layout_height="wrap_content" />
 
             <LinearLayout
+                android:visibility="gone"
                 android:gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal"
@@ -187,6 +188,7 @@
                 android:layout_height="wrap_content" />
 
             <EditText
+                android:visibility="gone"
                 android:layout_marginTop="20dp"
                 android:id="@+id/edtUserStaffAddStaff"
                 android:background="@drawable/background_edt"
@@ -201,6 +203,7 @@
                 android:layout_height="wrap_content" />
 
             <EditText
+                android:visibility="gone"
                 android:layout_marginTop="20dp"
                 android:id="@+id/edtPassStaffAddStaff"
                 android:background="@drawable/background_edt"

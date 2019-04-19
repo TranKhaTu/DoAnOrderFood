@@ -1,6 +1,8 @@
 package com.example.doanorderfood.model;
 
-public class Staff {
+import java.io.Serializable;
+
+public class Staff implements Serializable {
     private String name;
     private String id;
     private String sex;
@@ -8,11 +10,11 @@ public class Staff {
     private String address;
     private String phone;
     private String dateStart;
-    private String image;
     private int checkOnline;
     private String salary;
-    private String userPass;
-    private String position;
+
+    public Staff() {
+    }
 
     public Staff(String name, int checkOnline) {
         this.name = name;
@@ -67,13 +69,6 @@ public class Staff {
         this.dateStart = dateStart;
     }
 
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
 
     public String getSalary() {
         return salary;
@@ -81,22 +76,6 @@ public class Staff {
 
     public void setSalary(String salary) {
         this.salary = salary;
-    }
-
-    public String getUserPass() {
-        return userPass;
-    }
-
-    public void setUserPass(String userPass) {
-        this.userPass = userPass;
-    }
-
-    public String getPosition() {
-        return position;
-    }
-
-    public void setPosition(String position) {
-        this.position = position;
     }
 
     public Staff(String name) {

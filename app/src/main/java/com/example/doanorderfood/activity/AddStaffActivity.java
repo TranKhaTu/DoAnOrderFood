@@ -8,6 +8,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -17,8 +18,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.doanorderfood.R;
+import com.example.doanorderfood.model.Staff;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FileNotFoundException;
@@ -78,12 +83,20 @@ public class AddStaffActivity extends AppCompatActivity {
     private boolean checkClick;
 
     private byte[] bytes;
+    private DatabaseReference databaseReference;
+    private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_staff);
         ButterKnife.bind(this);
+        initViews();
+    }
+
+    private void initViews() {
+        mDatabase =  FirebaseDatabase.getInstance().getReference("UserWaiter");
+        databaseReference = mDatabase.child("User");
     }
 
     @Override
@@ -94,7 +107,7 @@ public class AddStaffActivity extends AppCompatActivity {
                 // open datepicker dialog.
                 // set date picker for current date
                 // add pickerListener listner to date picker
-                return new DatePickerDialog(this, pickerListener, year, month,day);
+                return new DatePickerDialog(this, pickerListener, year, month, day);
         }
         return null;
     }
@@ -106,18 +119,16 @@ public class AddStaffActivity extends AppCompatActivity {
         public void onDateSet(DatePicker view, int selectedYear,
                               int selectedMonth, int selectedDay) {
 
-            year  = selectedYear;
+            year = selectedYear;
             month = selectedMonth;
-            day   = selectedDay;
+            day = selectedDay;
 
             // Show selected date
-            if (checkClick)
-            {
+            if (checkClick) {
                 btnChooseDateOfBirthAddStaff.setText(new StringBuilder().append(day)
                         .append("-").append(month + 1).append("-").append(year)
                         .append(" "));
-            }
-            else {
+            } else {
                 btnChooseDateStartAddStaff.setText(new StringBuilder().append(day)
                         .append("-").append(month + 1).append("-").append(year)
                         .append(" "));
@@ -140,7 +151,7 @@ public class AddStaffActivity extends AppCompatActivity {
             case R.id.btnChooseAvatarAddStaff:
                 Intent intent = new Intent(Intent.ACTION_PICK);
                 intent.setType("image/*");
-                startActivityForResult(intent,REQUEST_CHOOSE_PICTURE);
+                startActivityForResult(intent, REQUEST_CHOOSE_PICTURE);
                 break;
             case R.id.btnDoneAddStaff:
                 clickDone();
@@ -167,9 +178,8 @@ public class AddStaffActivity extends AppCompatActivity {
         int isCheckedPosition = groupPosition.getCheckedRadioButtonId();
         radioPositionButton = findViewById(isCheckedPosition);
         String position = radioPositionButton.getText().toString();
-        if (id.isEmpty()||name.isEmpty()||address.isEmpty()||phone.isEmpty()
-                ||salary.isEmpty()||user.isEmpty()||pass.isEmpty())
-        {
+        if (id.isEmpty() || name.isEmpty() || address.isEmpty() || phone.isEmpty()
+                || salary.isEmpty()) {
             Snackbar snackbar = Snackbar
                     .make(edtAddressStaffAddStaff, "Bạn chưa nhập đủ thông tin!", Snackbar.LENGTH_SHORT);
             snackbar.setActionTextColor(Color.WHITE);
@@ -179,8 +189,7 @@ public class AddStaffActivity extends AppCompatActivity {
             return;
         }
         if (btnChooseDateOfBirthAddStaff.getText().toString().equalsIgnoreCase("Ngày sinh")
-                ||btnChooseDateStartAddStaff.getText().toString().equalsIgnoreCase("Ngày vào"))
-        {
+                || btnChooseDateStartAddStaff.getText().toString().equalsIgnoreCase("Ngày vào")) {
             Snackbar snackbar = Snackbar
                     .make(edtAddressStaffAddStaff, "Bạn chưa nhập đủ thông tin!", Snackbar.LENGTH_SHORT);
             snackbar.setActionTextColor(Color.WHITE);
@@ -188,18 +197,43 @@ public class AddStaffActivity extends AppCompatActivity {
             snackbarView.setBackgroundColor(Color.DKGRAY);
             snackbar.show();
             return;
+        } else {
+            Staff staff = new Staff();
+            staff.setId(id);
+            staff.setName(name);
+            staff.setSex(sex);
+            staff.setDateOfBirth(birth);
+            staff.setAddress(address);
+            staff.setPhone(phone);
+            staff.setDateStart(dateStart);
+            staff.setSalary(salary);
+            staff.setCheckOnline(1);
+            databaseReference.push().setValue(staff);
+            Toast.makeText(AddStaffActivity.this, "Thêm thành công.",Toast.LENGTH_LONG).show();
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    Intent intent=new Intent(AddStaffActivity.this,ManagerMainActivity.class);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.addCategory(Intent.CATEGORY_HOME);
+                    startActivity(intent);
+                    finish();
+                }
+            },2000);
+
         }
+
+
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (requestCode == REQUEST_CHOOSE_PICTURE && resultCode == RESULT_OK)
-        {
+        if (requestCode == REQUEST_CHOOSE_PICTURE && resultCode == RESULT_OK) {
             try {
                 Uri imageURI = data.getData();
                 InputStream is = getContentResolver().openInputStream(imageURI);
                 Bitmap bitmap = BitmapFactory.decodeStream(is);
-                bitmap = resize(bitmap,100,100);
+                bitmap = resize(bitmap, 100, 100);
                 bytes = getByteArrayFromBitmap(bitmap);
                 imAvatarAddStaff.setImageBitmap(bitmap);
             } catch (FileNotFoundException e) {
@@ -218,9 +252,9 @@ public class AddStaffActivity extends AppCompatActivity {
             int finalWidth = maxWidth;
             int finalHeight = maxHeight;
             if (ratioMax > ratioBitmap) {
-                finalWidth = (int) ((float)maxHeight * ratioBitmap);
+                finalWidth = (int) ((float) maxHeight * ratioBitmap);
             } else {
-                finalHeight = (int) ((float)maxWidth / ratioBitmap);
+                finalHeight = (int) ((float) maxWidth / ratioBitmap);
             }
             image = Bitmap.createScaledBitmap(image, finalWidth, finalHeight, true);
             return image;
@@ -228,7 +262,8 @@ public class AddStaffActivity extends AppCompatActivity {
             return image;
         }
     }
-    public byte[] getByteArrayFromBitmap(Bitmap bitmap){
+
+    public byte[] getByteArrayFromBitmap(Bitmap bitmap) {
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
         byte[] byteArray = stream.toByteArray();

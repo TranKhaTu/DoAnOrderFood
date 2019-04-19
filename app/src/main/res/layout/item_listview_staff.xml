@@ -1,24 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/linear_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/checkOnline"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvID"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="id " />
 
         <TextView
             android:id="@+id/tvNameStaff"
-            android:text="Tên "
-            android:padding="5dp"
             style="?android:attr/textAppearanceMedium"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Tên " />
 
-
-        <ImageView
-            android:id="@+id/checkOnline"
-            android:layout_marginRight="10dp"
-            android:layout_gravity="right|center_vertical"
-            android:src="@drawable/circle"
+        <TextView
+            android:id="@+id/tvAge"
+            style="?android:attr/textAppearanceMedium"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Tên " />
 
-</FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/checkOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/circle" />
+
+</RelativeLayout>
