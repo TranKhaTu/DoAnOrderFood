@@ -13,6 +13,8 @@ import android.widget.Toast;
 
 import com.example.doanorderfood.MainActivity;
 import com.example.doanorderfood.R;
+import com.example.doanorderfood.util.Const;
+import com.example.doanorderfood.util.SharePreferenceUtils;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -81,6 +83,7 @@ public class LoginActivity extends AppCompatActivity {
                                 Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                             }
                         } else {
+                            SharePreferenceUtils.insertStringData(LoginActivity.this, Const.KEY_NAME, edtEmail.getText().toString());
                             Intent intent = new Intent(LoginActivity.this, ManagerMainActivity.class);
                             startActivity(intent);
                             finish();

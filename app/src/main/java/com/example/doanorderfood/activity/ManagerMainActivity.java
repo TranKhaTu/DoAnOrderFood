@@ -20,6 +20,8 @@ import android.widget.Toast;
 import com.example.doanorderfood.R;
 import com.example.doanorderfood.adapter.ListviewStaffAdapter;
 import com.example.doanorderfood.model.Staff;
+import com.example.doanorderfood.util.Const;
+import com.example.doanorderfood.util.SharePreferenceUtils;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -68,6 +70,7 @@ public class ManagerMainActivity extends AppCompatActivity {
     private ListviewStaffAdapter adap;
     private DatabaseReference databaseReference;
     private DatabaseReference mDatabase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,8 +121,8 @@ public class ManagerMainActivity extends AppCompatActivity {
         lvStaff.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(ManagerMainActivity.this,ProfileActivity.class);
-                intent.putExtra("staff",arrStaff.get(position));
+                Intent intent = new Intent(ManagerMainActivity.this, ProfileActivity.class);
+                intent.putExtra("staff", arrStaff.get(position));
                 startActivity(intent);
             }
         });
@@ -168,6 +171,12 @@ public class ManagerMainActivity extends AppCompatActivity {
                 drawerLayoutManager.closeDrawers();
                 break;
             case R.id.btnLogOutManager:
+                Intent intent1 = new Intent(ManagerMainActivity.this, LoginActivity.class);
+                intent1.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent1.addCategory(Intent.CATEGORY_HOME);
+                startActivity(intent1);
+                finish();
+                SharePreferenceUtils.insertStringData(ManagerMainActivity.this, Const.KEY_NAME, "");
                 break;
         }
     }
