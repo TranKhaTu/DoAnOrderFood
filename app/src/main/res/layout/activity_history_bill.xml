@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarHistoryBill"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/background"
+        app:theme="@style/ToolbarStyle"
+        app:titleTextColor="#ffffff">
+
+        <ImageButton
+            android:id="@+id/btnBackHistoryBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:src="@drawable/back" />
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvIdStaffHistoryBill"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:text="Mã nhân viên: " />
+
+    <TextView
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="DANH SÁCH HÓA ĐƠN ĐÃ THANH TOÁN" />
+
+    <ListView
+        android:id="@+id/lvHistoryBill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:divider="#ffffff"
+        android:dividerHeight="5dp"
+        android:padding="5dp"></ListView>
+</LinearLayout>

@@ -12,4 +12,5 @@ public class Const {
     public static final String DEVELOPER_KEY = "AAAAAAAAAAAAAAAAAAAAA";
     public static final String KEY_ID = "ID";
     public static final String KEY_NAME = "NAME";
+    public static final String KEY_NUMBER_PEOPLE = "PEOPLE";
 }
