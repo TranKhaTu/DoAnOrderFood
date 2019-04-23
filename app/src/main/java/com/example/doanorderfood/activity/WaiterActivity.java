@@ -81,7 +81,7 @@ public class WaiterActivity extends AppCompatActivity implements SearchView.OnQu
     private int number;
     private String people;
     private Dialog dialogPeople;
-
+    public static boolean CHECK_TABLE = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -297,10 +297,10 @@ public class WaiterActivity extends AppCompatActivity implements SearchView.OnQu
                 int check = table.getCheck();
                 number = table.getNumber();
                 if (check == 0) {
-//                    MainForWaiterActivity.CHECK_TABLE = false;
+                    WaiterActivity.CHECK_TABLE = false;
                     dialogPeople.show();
                 } else if (check == 1) {
-//                    MainForWaiterActivity.CHECK_TABLE = true;
+                    WaiterActivity.CHECK_TABLE = true;
                     Intent intent = new Intent(WaiterActivity.this, BillActivity.class);
                     intent.putExtra("table", number + "");
                     startActivity(intent);
