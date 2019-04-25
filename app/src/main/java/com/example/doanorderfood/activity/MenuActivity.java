@@ -77,7 +77,7 @@ public class MenuActivity extends AppCompatActivity {
     private void creatListFood() {
         food.clear();
         for (int i = 0; i < 5; i++) {
-            food.add(new ItemMenu("food", "Ga", "30.000", "kg",
+            food.add(new ItemMenu("food", "Ga", "30000", "kg",
                     "1",
                     "https://tea-4.lozi.vn/v1/images/resized/tokkboki-gimbap-com-cari-ga-com-tron-6H0HLlNiAXxz0Xf7-134655-1473354329?w=480&type=o"));
 
@@ -89,7 +89,7 @@ public class MenuActivity extends AppCompatActivity {
     private void creatListDrink() {
         drink.clear();
         for (int i = 0; i < 8; i++) {
-            drink.add(new ItemMenu("drink", "Nuoc Cam", "30.000", "ml",
+            drink.add(new ItemMenu("drink", "Nuoc Cam", "30000", "ml",
                     "1",
                     "https://kenh14cdn.com/2018/12/11/photo-1-1544498821657955357020.jpg"));
             if (!arrItemSpinnerDrink.toString().contains("drink"))
