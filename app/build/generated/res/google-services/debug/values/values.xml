@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="default_web_client_id" translatable="false">581604920373-eotudouc1v1qrpttosaqmi9k9mn7jp7g.apps.googleusercontent.com</string>
-    <string name="firebase_database_url" translatable="false">https://doan-73631.firebaseio.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">581604920373</string>
-    <string name="google_api_key" translatable="false">AIzaSyB8rKHtj3Ao_vXLplBJYykL1FNyehySC3M</string>
-    <string name="google_app_id" translatable="false">1:581604920373:android:bc47f7d2f01da572</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB8rKHtj3Ao_vXLplBJYykL1FNyehySC3M</string>
-    <string name="google_storage_bucket" translatable="false">doan-73631.appspot.com</string>
-    <string name="project_id" translatable="false">doan-73631</string>
+    <string name="firebase_database_url" translatable="false">https://luongdong-2.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">69465275433</string>
+    <string name="google_api_key" translatable="false">AIzaSyCv_E0vTx_QbeLCKXvW4rkthvPNA3mPqe0</string>
+    <string name="google_app_id" translatable="false">1:69465275433:android:3300b1e2951ab236</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCv_E0vTx_QbeLCKXvW4rkthvPNA3mPqe0</string>
+    <string name="google_storage_bucket" translatable="false">luongdong-2.appspot.com</string>
+    <string name="project_id" translatable="false">luongdong-2</string>
 </resources>

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\PC\\Desktop\\DoAnOrderFood\\DoAnOrderFood\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "outputFile": "/Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\f89a4c5b7dc688a2f2b130438a2ef5e7\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/dongluong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/dd4e9a196840337fcf47eefd7fd9e33b/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-28.0.0.aar\\c90149bf9b942ee644efc94ede080cb8\\res\\values-v23\\values-v23.xml",
+                    "source": "/Users/dongluong/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/aeac6af38d65f8a254b4a6324a7e87b2/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

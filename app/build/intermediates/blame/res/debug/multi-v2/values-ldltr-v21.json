@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\PC\\Desktop\\DoAnOrderFood\\DoAnOrderFood\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
+            "outputFile": "/Users/dongluong/Documents/duanoutsoft/DoAnOrderFood/DoAnOrderFood/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\PC\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\f89a4c5b7dc688a2f2b130438a2ef5e7\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "/Users/dongluong/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/dd4e9a196840337fcf47eefd7fd9e33b/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
