@@ -66,7 +66,7 @@ public class ListviewHistoryBillAdapter extends BaseAdapter {
 
         final HistoryBill historyBill = arrItem.get(i);
         final ListviewHistoryBillAdapter.ViewHolder viewHolder = (ListviewHistoryBillAdapter.ViewHolder) viewRow.getTag();
-        viewHolder.tvIdBill.setText("Mã hóa đơn: "+ historyBill.getIdBill());
+        viewHolder.tvIdBill.setText("Thời gian: "+ historyBill.getTime());
         viewHolder.tvTable.setText("Bàn số: "+historyBill.getTable()+"");
         viewHolder.tvPeople.setText("Số khách: "+historyBill.getPeople()+"");
         viewHolder.tvTotal.setText("Tổng tiền: "+historyBill.getTotal()+"");

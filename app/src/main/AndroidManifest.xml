@@ -17,6 +17,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.MonAnDaCheBienActivity"></activity>
+        <activity android:name=".activity.DetailCookerActivity" />
         <activity android:name=".activity.MenuActivity" />
         <activity android:name=".activity.BillActivity" />
         <activity android:name=".activity.HistoryBillActivity" />

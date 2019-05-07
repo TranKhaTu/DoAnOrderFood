@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.DetailCookerActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/background"
+        app:theme="@style/ToolbarStyle"
+        app:title="THỰC ĐƠN"
+        app:titleTextColor="#ffffff">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnBackMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#00ffffff"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/btnGoToBill"
+                style="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="15dp"
+                android:text="Xong"
+                android:textColor="#ffffff" />
+
+            <TextView
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="THỰC ĐƠN"
+                android:textColor="#ffffff" />
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvTableBill"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:text="Bàn số: " />
+
+        <TextView
+            android:id="@+id/tvPeopleBill"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:padding="10dp"
+            android:text="Số người: " />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTimeBill"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:text="Thời gian:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shawdow"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTotalBill"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:text="Tổng tiền " />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvItemBill"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

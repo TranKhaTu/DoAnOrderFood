@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,11 +14,20 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.doanorderfood.R;
+import com.example.doanorderfood.adapter.ListviewBillAdapter;
 import com.example.doanorderfood.adapter.ListviewDialogHistoryBill;
 import com.example.doanorderfood.adapter.ListviewHistoryBillAdapter;
 import com.example.doanorderfood.model.HistoryBill;
 import com.example.doanorderfood.model.ItemMenu;
+import com.example.doanorderfood.model.Staff;
 import com.example.doanorderfood.model.User;
+import com.example.doanorderfood.util.Const;
+import com.example.doanorderfood.util.SharePreferenceUtils;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -26,15 +36,16 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class HistoryBillActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
-    private User user;
+    private Staff user;
     private TextView tvIdStaff;
     private ListView listView;
     private ImageView imBack;
     private ListviewHistoryBillAdapter adapter;
-    private ArrayList<HistoryBill> arrBill;
+    private ArrayList<HistoryBill> historyBills;
     private Dialog dialogListItem;
-    private ArrayList<ItemMenu> arrItem;
-
+    private ArrayList<ItemMenu> arrItem=new ArrayList<>();
+    private DatabaseReference databaseReference;
+    private DatabaseReference mDatabase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,13 +57,42 @@ public class HistoryBillActivity extends AppCompatActivity implements AdapterVie
     }
 
     private void initViews() {
-        tvIdStaff.setText("Mã nhân viên: "+ user.getId());
+        historyBills=new ArrayList<>();
+        user= SharePreferenceUtils.getObjData(HistoryBillActivity.this,Const.KEY_STAFF);
+        tvIdStaff.setText("Tên nhân viên: "+ user.getName());
         imBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
         });
+        mDatabase = FirebaseDatabase.getInstance().getReference("HoaDon");
+        databaseReference = mDatabase.child("HoaDonChildren");
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot noteSnapshot : dataSnapshot.getChildren()) {
+
+                    //  Table table = noteSnapshot.getValue(Table.class);
+                    HistoryBill historyBill = noteSnapshot.getValue(HistoryBill.class);
+                    if(historyBill.getType().equals("xuất hoá đơn"))
+                    historyBills.add(historyBill);
+//
+//      arrTable.add(table);
+                    adapter.notifyDataSetChanged();
+
+//                    String number=noteSnapshot.child("check").getValue(String.class);
+//                    Log.d("dong", "onDataChange: "+number);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+            }
+        });
+        adapter = new ListviewHistoryBillAdapter(HistoryBillActivity.this,R.layout.item_history_bill,historyBills);
+        listView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
         listView.setOnItemClickListener(this);
     }
 
@@ -63,80 +103,18 @@ public class HistoryBillActivity extends AppCompatActivity implements AdapterVie
     }
 
     private void getData() {
-        Intent intent = getIntent();
-        user = (User) intent.getSerializableExtra("u");
     }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-    }
-
-    private void getListItemBill(final Object arg) {
-        arrItem = new ArrayList<>();
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                JSONArray data = (JSONArray) arg;
-                for (int i=0; i<data.length(); i++)
-                {
-                    try {
-                        JSONObject object = data.getJSONObject(i);
-                        String name = object.getString("tenMonAn");
-                        String count = object.getString("soLuong");
-                        ItemMenu itemMenu = new ItemMenu("",name,"","","","");
-                        itemMenu.setCount(Integer.parseInt(count));
-                        arrItem.add(itemMenu);
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-                initDialog();
-                if (!isFinishing())
-                {
-                    dialogListItem.show();
-                }
-            }
-        });
-    }
-
-    private void initDialog() {
         dialogListItem = new Dialog(this,android.R.style.Theme_Holo_Light_Dialog_NoActionBar_MinWidth);
         dialogListItem.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialogListItem.setContentView(R.layout.dialog_list_item_history_bill);
-
+        dialogListItem.show();
         ListView lvItem = dialogListItem.findViewById(R.id.lvItemDialogHistoryBill);
-        ListviewDialogHistoryBill adap = new ListviewDialogHistoryBill(this,R.layout.item_dialog_history_bill,arrItem);
+        ListviewDialogHistoryBill adap = new ListviewDialogHistoryBill(this,R.layout.item_dialog_history_bill,historyBills.get(position).getArrayList());
         lvItem.setAdapter(adap);
         adap.notifyDataSetChanged();
     }
 
-    private void getListBill(final Object arg) {
-        arrBill = new ArrayList<>();
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                JSONArray data = (JSONArray) arg;
-                for (int i=0; i<data.length(); i++)
-                {
-                    try {
-                        JSONObject object = data.getJSONObject(i);
-                        String idBill = object.getString("idHoaDon");
-                        String idStaff = object.getString("idNhanVien");
-                        int table = object.getInt("tenBan");
-                        String time = object.getString("thoiGianThanhToan");
-                        String total = object.getString("tongTien");
-                        int people = object.getInt("soNguoi");
-                        HistoryBill historyBill = new HistoryBill(idBill,table,people,total,time);
-                        arrBill.add(historyBill);
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-                adapter = new ListviewHistoryBillAdapter(HistoryBillActivity.this,R.layout.item_history_bill,arrBill);
-                listView.setAdapter(adapter);
-                adapter.notifyDataSetChanged();
-            }
-        });
-    }
 }

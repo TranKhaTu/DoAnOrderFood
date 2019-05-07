@@ -25,12 +25,11 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:text="luongdong1@gmail.com"
                 android:id="@+id/edt_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
-                android:hint="@string/hint_email"
+                android:hint="Email or User name"
                 android:inputType="textEmailAddress"
                 android:textColor="@android:color/white"
                 android:textColorHint="@android:color/white" />
@@ -41,7 +40,6 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:text="12345678"
                 android:id="@+id/edt_password"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

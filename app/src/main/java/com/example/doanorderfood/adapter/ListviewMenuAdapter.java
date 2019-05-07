@@ -72,7 +72,7 @@ public class ListviewMenuAdapter extends BaseAdapter {
 
         final ItemMenu itemMenu = arrItem.get(i);
         final ListviewMenuAdapter.ViewHolder viewHolder = (ListviewMenuAdapter.ViewHolder) viewRow.getTag();
-        Glide.with(context).load("https://tea-4.lozi.vn/v1/images/resized/tokkboki-gimbap-com-cari-ga-com-tron-6H0HLlNiAXxz0Xf7-134655-1473354329?w=480&type=o").into(viewHolder.imgFood);
+        Glide.with(context).load(itemMenu.getImage()).into(viewHolder.imgFood);
         viewHolder.tvName.setText(itemMenu.getName());
         viewHolder.tvPrice.setText(itemMenu.getPrice());
         viewHolder.tvCount.setText(itemMenu.getCount()+"");

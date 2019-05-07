@@ -4,6 +4,9 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+import com.example.doanorderfood.model.Staff;
+import com.google.gson.Gson;
+
 
 public class SharePreferenceUtils {
 
@@ -47,6 +50,24 @@ public class SharePreferenceUtils {
         SharedPreferences.Editor editor = preferences.edit();
         editor.putInt(key, value);
         editor.commit();
+    }
+
+    public static void insertObjDataStaff(Context context, String key, Staff staff) {
+        preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences.Editor editor = preferences.edit();
+        Gson gson = new Gson();
+        String json = gson.toJson(staff);
+        editor.putString(key, json);
+        editor.apply();
+    }
+
+    public static Staff getObjData(Context context, String key) {
+        preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        Gson gson = new Gson();
+        String json = preferences.getString(key, "");
+        Staff staff = gson.fromJson(json, Staff.class);
+        // int r = preferences.getInt(key, 0);
+        return staff;
     }
 
     public static boolean getBooleanData(Context context, String key) {

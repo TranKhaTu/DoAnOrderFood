@@ -59,6 +59,7 @@
                 </LinearLayout>
 
                 <ListView
+                    android:layout_marginBottom="70dp"
                     android:id="@+id/lvStaff"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

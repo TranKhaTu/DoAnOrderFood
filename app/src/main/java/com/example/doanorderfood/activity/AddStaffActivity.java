@@ -95,7 +95,7 @@ public class AddStaffActivity extends AppCompatActivity {
     }
 
     private void initViews() {
-        mDatabase =  FirebaseDatabase.getInstance().getReference("UserWaiter");
+        mDatabase = FirebaseDatabase.getInstance().getReference("UserWaiter");
         databaseReference = mDatabase.child("User");
     }
 
@@ -179,7 +179,7 @@ public class AddStaffActivity extends AppCompatActivity {
         radioPositionButton = findViewById(isCheckedPosition);
         String position = radioPositionButton.getText().toString();
         if (id.isEmpty() || name.isEmpty() || address.isEmpty() || phone.isEmpty()
-                || salary.isEmpty()) {
+                || salary.isEmpty() || user.isEmpty() || pass.isEmpty()) {
             Snackbar snackbar = Snackbar
                     .make(edtAddressStaffAddStaff, "Bạn chưa nhập đủ thông tin!", Snackbar.LENGTH_SHORT);
             snackbar.setActionTextColor(Color.WHITE);
@@ -208,18 +208,21 @@ public class AddStaffActivity extends AppCompatActivity {
             staff.setDateStart(dateStart);
             staff.setSalary(salary);
             staff.setCheckOnline(1);
+            staff.setNameNhanVien(user);
+            staff.setPassword(pass);
+
             databaseReference.push().setValue(staff);
-            Toast.makeText(AddStaffActivity.this, "Thêm thành công.",Toast.LENGTH_LONG).show();
+            Toast.makeText(AddStaffActivity.this, "Thêm thành công.", Toast.LENGTH_LONG).show();
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent intent=new Intent(AddStaffActivity.this,ManagerMainActivity.class);
+                    Intent intent = new Intent(AddStaffActivity.this, ManagerMainActivity.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     intent.addCategory(Intent.CATEGORY_HOME);
                     startActivity(intent);
                     finish();
                 }
-            },2000);
+            }, 2000);
 
         }
 

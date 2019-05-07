@@ -12,6 +12,22 @@ public class Staff implements Serializable {
     private String dateStart;
     private int checkOnline;
     private String salary;
+    private String nameNhanVien;
+    private String password;
+
+    public Staff(String name, String id, String sex, String dateOfBirth, String address, String phone, String dateStart, int checkOnline, String salary, String nameNhanVien, String password) {
+        this.name = name;
+        this.id = id;
+        this.sex = sex;
+        this.dateOfBirth = dateOfBirth;
+        this.address = address;
+        this.phone = phone;
+        this.dateStart = dateStart;
+        this.checkOnline = checkOnline;
+        this.salary = salary;
+        this.nameNhanVien = nameNhanVien;
+        this.password = password;
+    }
 
     public Staff() {
     }
@@ -19,6 +35,24 @@ public class Staff implements Serializable {
     public Staff(String name, int checkOnline) {
         this.name = name;
         this.checkOnline = checkOnline;
+    }
+
+
+
+    public String getNameNhanVien() {
+        return nameNhanVien;
+    }
+
+    public void setNameNhanVien(String email) {
+        this.nameNhanVien = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getId() {

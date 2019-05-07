@@ -14,14 +14,14 @@ public class ItemMenu implements Serializable {
     public ItemMenu() {
     }
 
-    public ItemMenu(String group, String name, String price, String unit, String check, String image) {
+    public ItemMenu(String group, String name, String price, String unit, String check, String image,int count) {
         this.group = group;
         this.name = name;
         this.price = price;
         this.unit = unit;
         this.check = check;
         this.image = image;
-        this.count = 0;
+        this.count = count;
     }
 
     public String getGroup() {

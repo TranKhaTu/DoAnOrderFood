@@ -12,7 +12,7 @@ import com.example.doanorderfood.MainActivity;
 import com.example.doanorderfood.R;
 import com.example.doanorderfood.util.Const;
 import com.example.doanorderfood.util.SharePreferenceUtils;
-
+//man khoi chay dau tien khi vao app
 public class SplashActivity extends AppCompatActivity {
 
     @Override
@@ -85,6 +85,17 @@ public class SplashActivity extends AppCompatActivity {
                     // trong anim ta tạo hai file rồi gọi ở đây để tạo animation khi chuyển activity
                     overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
                     finish();
+                } else if (email.contains("nv_") || email.contains("nv")) {
+                    Intent intent = new Intent(SplashActivity.this, WaiterActivity.class);
+                    startActivity(intent);
+                    // trong anim ta tạo hai file rồi gọi ở đây để tạo animation khi chuyển activity
+                    overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
+                    finish();
+                } else if (email.contains("daubep") || email.contains("daubep_")) {
+                    Intent intent = new Intent(SplashActivity.this, CookerActivity.class);
+                    startActivity(intent);
+                    // trong anim ta tạo hai file rồi gọi ở đây để tạo animation khi chuyển activity
+                    overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
                 } else {
                     Intent intent = new Intent(SplashActivity.this, ManagerMainActivity.class);
                     startActivity(intent);

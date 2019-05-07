@@ -13,4 +13,6 @@ public class Const {
     public static final String KEY_ID = "ID";
     public static final String KEY_NAME = "NAME";
     public static final String KEY_NUMBER_PEOPLE = "PEOPLE";
+    public static final String KEY_STAFF= "STAFF";
+    public static final String KEY_SHOW_DONE= "DONE";
 }

@@ -6,9 +6,11 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
@@ -21,9 +23,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.doanorderfood.R;
 import com.example.doanorderfood.adapter.GridviewTableAdapter;
+import com.example.doanorderfood.model.HistoryBill;
+import com.example.doanorderfood.model.ItemMenu;
 import com.example.doanorderfood.model.Staff;
 import com.example.doanorderfood.model.Table;
 import com.example.doanorderfood.util.Const;
@@ -33,6 +38,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.suke.widget.SwitchButton;
 
 import java.util.ArrayList;
 
@@ -41,8 +47,8 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class WaiterActivity extends AppCompatActivity implements SearchView.OnQueryTextListener, AdapterView.OnItemClickListener {
-
+public class WaiterActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
+    //anh xa view
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.gridview)
@@ -71,6 +77,15 @@ public class WaiterActivity extends AppCompatActivity implements SearchView.OnQu
     Button btnLogOut;
     @BindView(R.id.drawerLayout)
     DrawerLayout drawerLayout;
+    @BindView(R.id.btnStatus)
+    Button btnStatus;
+    @BindView(R.id.switch_on)
+    SwitchButton switchOn;
+    @BindView(R.id.cardview)
+    CardView cardview;
+    @BindView(R.id.btnListHistoryThanhToan)
+    Button btnListHistoryThanhToan;
+
     private GridviewTableAdapter gridviewTableAdapter;
     private ArrayList<Table> arrTable;
 
@@ -82,13 +97,20 @@ public class WaiterActivity extends AppCompatActivity implements SearchView.OnQu
     private String people;
     private Dialog dialogPeople;
     public static boolean CHECK_TABLE = false;
+    private Staff staff;
+    private ArrayList<ItemMenu> arrItemChecked = new ArrayList<>();
+
+    //
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_waiter);
         ButterKnife.bind(this);
+        //khoi tao view
         initViews();
+        //khoi tao data
         initData();
+        //khoi tao so nguoi
         initDialogPeople();
     }
 
@@ -120,6 +142,7 @@ public class WaiterActivity extends AppCompatActivity implements SearchView.OnQu
     }
 
     private void initData() {
+        arrTable = new ArrayList<>();
         mDatabase = FirebaseDatabase.getInstance().getReference("Table");
         databaseReference = mDatabase.child("TableChildren");
         databaseReference.addValueEventListener(new ValueEventListener() {
@@ -129,8 +152,15 @@ public class WaiterActivity extends AppCompatActivity implements SearchView.OnQu
                     Table table = noteSnapshot.getValue(Table.class);
                     arrTable.add(table);
                     gridviewTableAdapter.notifyDataSetChanged();
+//                    int table = noteSnapshot.child("check").getValue(Integer.class);
+//                    String note = noteSnapshot.child("note").getValue(String.class);
+//                    int number = noteSnapshot.child("number").getValue(Integer.class);
+//                    int numberOfChair = noteSnapshot.child("numberOfChair").getValue(Integer.class);
+//                    int position = noteSnapshot.child("position").getValue(Integer.class);
+
+
 //                    String number=noteSnapshot.child("check").getValue(String.class);
-//                    Log.d("dong", "onDataChange: "+number);
+                    Log.d("dong", "onDataChange: " + table);
                 }
             }
 
@@ -139,12 +169,81 @@ public class WaiterActivity extends AppCompatActivity implements SearchView.OnQu
             }
         });
 
+
         gridviewTableAdapter = new GridviewTableAdapter(this, R.layout.item_gridview, arrTable);
         gridview.setAdapter(gridviewTableAdapter);
-        gridview.setOnItemClickListener(this);
+        gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Table table = arrTable.get(position);
+                int check = table.getCheck();
+                number = table.getNumber();
+                if (check == 0) {
+                    WaiterActivity.CHECK_TABLE = false;
+                    dialogPeople.show();
+                } else if (check == 1) {
+                    WaiterActivity.CHECK_TABLE = true;
+                    Intent intent = new Intent(WaiterActivity.this, BillActivity.class);
+                    intent.putExtra("table", number + "");
+                    intent.putExtra("numPeo", table.getNumberOfChair());
+                    intent.putExtra("list", arrTable.get(position).getArrayList());
+                    startActivity(intent);
+                }
+            }
+        });
     }
 
     private void initViews() {
+//
+//        arrItemChecked.add(new ItemMenu("food", "Ga", "30000", "kg",
+//                "1",
+//                "https://tea-4.lozi.vn/v1/images/resized/tokkboki-gimbap-com-cari-ga-com-tron-6H0HLlNiAXxz0Xf7-134655-1473354329?w=480&type=o", 1));
+
+        staff = SharePreferenceUtils.getObjData(WaiterActivity.this, Const.KEY_STAFF);
+        if (staff.getCheckOnline() == 1) {
+            switchOn.setChecked(true);
+        } else
+            switchOn.setChecked(false);
+        tvNameStaff.setText(staff.getName());
+        switchOn.setOnCheckedChangeListener(new SwitchButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(SwitchButton view, boolean isChecked) {
+                int check = 0;
+                if (isChecked) {
+                    check = 1;
+                    Toast.makeText(WaiterActivity.this, "Bạn đã bật chế độ Online", Toast.LENGTH_SHORT).show();
+                } else {
+                    check = 0;
+                    Toast.makeText(WaiterActivity.this, "Bạn đã bật chế độ Offline", Toast.LENGTH_SHORT).show();
+                }
+                //get data tu firebase
+                mDatabase = FirebaseDatabase.getInstance().getReference("UserWaiter");
+                databaseReference = mDatabase.child("User");
+                final int finalCheck = check;
+                databaseReference.orderByChild("nameNhanVien").equalTo(staff.getNameNhanVien())
+                        .addListenerForSingleValueEvent(new ValueEventListener() {
+                            @Override
+                            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+
+                                for (DataSnapshot child : dataSnapshot.getChildren()) {
+                                    int currentScore = child.child("checkOnline").getValue(Integer.class);
+                                    child.getRef().child("checkOnline").setValue(finalCheck);
+                                    SharePreferenceUtils.insertObjDataStaff(getApplicationContext(), Const.KEY_STAFF,
+                                            (new Staff(staff.getName(), staff.getId(),
+                                                    staff.getSex(), staff.getDateOfBirth(), staff.getAddress(),
+                                                    staff.getPhone(), staff.getDateStart(), finalCheck, staff.getSalary(), staff.getNameNhanVien()
+                                                    , staff.getPassword())));
+                                }
+
+                            }
+
+                            @Override
+                            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                            }
+                        });
+            }
+        });
         arrTable = new ArrayList<>();
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
@@ -156,6 +255,14 @@ public class WaiterActivity extends AppCompatActivity implements SearchView.OnQu
 
         line3.setVisibility(View.VISIBLE);
         btnShowListTable.setTextColor(Color.parseColor("#ef4b4c"));
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            //drawer is open
+            gridview.setClickable(false);
+            cardview.setClickable(false);
+        } else {
+            gridview.setClickable(true);
+            cardview.setClickable(true);
+        }
 
     }
 
@@ -189,28 +296,85 @@ public class WaiterActivity extends AppCompatActivity implements SearchView.OnQu
             gridview.setAdapter(gridviewTableAdapter);
             gridviewTableAdapter.notifyDataSetChanged();
 
-        } else if (newText.equalsIgnoreCase("all")) {
+        } else if (newText.equalsIgnoreCase("all")) { //tat ca cac ban
             gridviewTableAdapter = new GridviewTableAdapter(this, R.layout.item_gridview, arrTable);
             gridview.setAdapter(gridviewTableAdapter);
+            gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Table table = arrTable.get(position);
+                    int check = table.getCheck();
+                    number = table.getNumber();
+                    if (check == 0) {
+                        WaiterActivity.CHECK_TABLE = false;
+                        dialogPeople.show();
+                    } else if (check == 1) {
+                        WaiterActivity.CHECK_TABLE = true;
+                        Intent intent = new Intent(WaiterActivity.this, BillActivity.class);
+                        intent.putExtra("table", number + "");
+                        intent.putExtra("numPeo", table.getNumberOfChair());
+                        intent.putExtra("list", table.getArrayList());
+                        startActivity(intent);
+                    }
+                }
+            });
             gridviewTableAdapter.notifyDataSetChanged();
-        } else if (newText.equalsIgnoreCase("free")) {
-            ArrayList<Table> tables = new ArrayList<>();
+        } else if (newText.equalsIgnoreCase("free")) { //ban trong
+            final ArrayList<Table> tables = new ArrayList<>();
             for (Table t : arrTable) {
                 if (t.getCheck() == 0) {
                     tables.add(t);
                 }
             }
             gridviewTableAdapter = new GridviewTableAdapter(this, R.layout.item_gridview, tables);
+            gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Table table = tables.get(position);
+                    int check = table.getCheck();
+                    number = table.getNumber();
+                    if (check == 0) {
+                        WaiterActivity.CHECK_TABLE = false;
+                        dialogPeople.show();
+                    } else if (check == 1) {
+                        WaiterActivity.CHECK_TABLE = true;
+                        Intent intent = new Intent(WaiterActivity.this, BillActivity.class);
+                        intent.putExtra("table", number + "");
+                        intent.putExtra("numPeo", table.getNumberOfChair());
+                        intent.putExtra("list", table.getArrayList());
+                        startActivity(intent);
+                    }
+                }
+            });
             gridview.setAdapter(gridviewTableAdapter);
             gridviewTableAdapter.notifyDataSetChanged();
-        } else if (newText.equalsIgnoreCase("book")) {
-            ArrayList<Table> tables = new ArrayList<>();
+        } else if (newText.equalsIgnoreCase("book")) { //chon ban(ban da dat)
+            final ArrayList<Table> tables = new ArrayList<>();
             for (Table t : arrTable) {
                 if (t.getCheck() == 1) {
                     tables.add(t);
                 }
             }
             gridviewTableAdapter = new GridviewTableAdapter(this, R.layout.item_gridview, tables);
+            gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                    Table table = tables.get(position);
+                    int check = table.getCheck();
+                    number = table.getNumber();
+                    if (check == 0) {
+                        WaiterActivity.CHECK_TABLE = false;
+                        dialogPeople.show();
+                    } else if (check == 1) {
+                        WaiterActivity.CHECK_TABLE = true;
+                        Intent intent = new Intent(WaiterActivity.this, BillActivity.class);
+                        intent.putExtra("table", number + "");
+                        intent.putExtra("numPeo", table.getNumberOfChair());
+                        intent.putExtra("list", table.getArrayList());
+                        startActivity(intent);
+                    }
+                }
+            });
             gridview.setAdapter(gridviewTableAdapter);
             gridviewTableAdapter.notifyDataSetChanged();
         } else {
@@ -227,41 +391,112 @@ public class WaiterActivity extends AppCompatActivity implements SearchView.OnQu
         return true;
     }
 
-    @OnClick({R.id.btnShowListTableFree, R.id.btnShowListTableBooked, R.id.btnShowListTable, R.id.btnListHistoryBill, R.id.btnLogOut})
+//  ham xu ly onclick su kien
+    @OnClick({R.id.btnShowListTableFree, R.id.btnShowListTableBooked, R.id.btnShowListTable, R.id.btnListHistoryBill, R.id.btnLogOut
+            , R.id.btnProfile, R.id.btnStatus, R.id.btnListHistoryThanhToan})
     public void onViewClicked(View view) {
         switch (view.getId()) {
+            case R.id.btnStatus:
+                break;
+            case R.id.btnProfile:
+                Intent intent = new Intent(WaiterActivity.this, ProfileActivity.class);
+                intent.putExtra("staff", staff);
+                startActivity(intent);
+                break;
             case R.id.btnShowListTableFree:
-                ArrayList<Table> tables = new ArrayList<>();
+                final ArrayList<Table> tables = new ArrayList<>();
                 for (Table t : arrTable) {
                     if (t.getCheck() == 0) {
                         tables.add(t);
                     }
                 }
                 gridviewTableAdapter = new GridviewTableAdapter(this, R.layout.item_gridview, tables);
+                gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Table table = tables.get(position);
+                        int check = table.getCheck();
+                        number = table.getNumber();
+                        if (check == 0) {
+                            WaiterActivity.CHECK_TABLE = false;
+                            dialogPeople.show();
+                        } else if (check == 1) {
+                            WaiterActivity.CHECK_TABLE = true;
+                            Intent intent = new Intent(WaiterActivity.this, BillActivity.class);
+                            intent.putExtra("table", number + "");
+                            intent.putExtra("numPeo", table.getNumberOfChair());
+                            intent.putExtra("list", table.getArrayList());
+                            startActivity(intent);
+                        }
+                    }
+                });
                 gridview.setAdapter(gridviewTableAdapter);
                 gridviewTableAdapter.notifyDataSetChanged();
                 setLine(line1, btnShowListTableFree);
                 break;
             case R.id.btnShowListTableBooked:
-                ArrayList<Table> tables1 = new ArrayList<>();
+                final ArrayList<Table> tables1 = new ArrayList<>();
                 for (Table t : arrTable) {
                     if (t.getCheck() == 1) {
                         tables1.add(t);
                     }
                 }
                 gridviewTableAdapter = new GridviewTableAdapter(this, R.layout.item_gridview, tables1);
+                gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Table table = tables1.get(position);
+                        int check = table.getCheck();
+                        number = table.getNumber();
+                        if (check == 0) {
+                            WaiterActivity.CHECK_TABLE = false;
+                            dialogPeople.show();
+                        } else if (check == 1) {
+                            WaiterActivity.CHECK_TABLE = true;
+                            Intent intent = new Intent(WaiterActivity.this, BillActivity.class);
+                            intent.putExtra("table", number + "");
+                            intent.putExtra("numPeo", table.getNumberOfChair());
+                            intent.putExtra("list", table.getArrayList());
+                            startActivity(intent);
+                        }
+                    }
+                });
                 gridview.setAdapter(gridviewTableAdapter);
                 gridviewTableAdapter.notifyDataSetChanged();
                 setLine(line2, btnShowListTableBooked);
                 break;
+
+            case R.id.btnListHistoryThanhToan:
+                Intent intent2 = new Intent(WaiterActivity.this, HistoryBillActivity.class);
+                startActivity(intent2);
+                break;
             case R.id.btnShowListTable:
                 gridviewTableAdapter = new GridviewTableAdapter(this, R.layout.item_gridview, arrTable);
+                gridview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Table table = arrTable.get(position);
+                        int check = table.getCheck();
+                        number = table.getNumber();
+                        if (check == 0) {
+                            WaiterActivity.CHECK_TABLE = false;
+                            dialogPeople.show();
+                        } else if (check == 1) {
+                            WaiterActivity.CHECK_TABLE = true;
+                            Intent intent = new Intent(WaiterActivity.this, BillActivity.class);
+                            intent.putExtra("table", number + "");
+                            intent.putExtra("numPeo", table.getNumberOfChair());
+                            intent.putExtra("list", table.getArrayList());
+                            startActivity(intent);
+                        }
+                    }
+                });
                 gridview.setAdapter(gridviewTableAdapter);
                 gridviewTableAdapter.notifyDataSetChanged();
                 setLine(line3, btnShowListTable);
                 break;
             case R.id.btnListHistoryBill:
-                Intent in = new Intent(WaiterActivity.this, HistoryBillActivity.class);
+                Intent in = new Intent(WaiterActivity.this, MonAnDaCheBienActivity.class);
                 startActivity(in);
                 break;
             case R.id.btnLogOut:
@@ -287,25 +522,5 @@ public class WaiterActivity extends AppCompatActivity implements SearchView.OnQu
         v.setVisibility(View.VISIBLE);
         b.setTextColor(Color.parseColor("#ef4b4c"));
 
-    }
-
-    @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-        switch (adapterView.getId()) {
-            case R.id.gridview:
-                Table table = arrTable.get(position);
-                int check = table.getCheck();
-                number = table.getNumber();
-                if (check == 0) {
-                    WaiterActivity.CHECK_TABLE = false;
-                    dialogPeople.show();
-                } else if (check == 1) {
-                    WaiterActivity.CHECK_TABLE = true;
-                    Intent intent = new Intent(WaiterActivity.this, BillActivity.class);
-                    intent.putExtra("table", number + "");
-                    startActivity(intent);
-                }
-                break;
-        }
     }
 }
